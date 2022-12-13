@@ -119,15 +119,15 @@ lib LibTesseract
   type File = X_IoFile
   type EtextDesc = Void*
 
-  alias X_IoMarker = Void
+  alias X_IoMarker = LibLeptonica::X_IoMarker
   alias X__OffT = LibC::Long
-  alias X_IoLockT = Void
+  alias X_IoLockT = LibLeptonica::X_IoLockT
   alias X__Off64T = LibC::Long
-  alias X_IoCodecvt = Void
-  alias X_IoWideData = Void
-  alias Pix = Void
-  alias Pixa = Void
-  alias Boxa = Void
+  alias X_IoCodecvt = LibLeptonica::X_IoCodecvt
+  alias X_IoWideData = LibLeptonica::X_IoWideData
+  alias Pix = LibLeptonica::Pix
+  alias Pixa = LibLeptonica::Pixa
+  alias Boxa = LibLeptonica::Boxa
   alias CancelFunc = (Void*, LibC::Int -> LibC::Int)
   alias ProgressFunc = (EtextDesc, LibC::Int, LibC::Int, LibC::Int, LibC::Int -> LibC::Int)
 
